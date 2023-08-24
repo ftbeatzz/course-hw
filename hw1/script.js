@@ -1,85 +1,41 @@
-let password = String(prompt('Введите свой пароль'));
-if (password === 'password123') {
-    console.log('Пароль верный');
-} else {
-    console.log('Пароль неверный');
+let a = 1;
+
+while (a <= 2) {
+  console.log('Привет!');
+  a++;
 }
 
-let c = -2;
-if (c > 0 && c < 10) {
-    console.log('Верно');
-} else {
-    console.log('Неверно')
-}
-let d = 2;
-let e = 36;
-
-if (d > 100 || e > 100) {
-    console.log('Верно');
-} else {
-    console.log('Неверно')
+for (let b = 1; b <= 5; b++) {
+  console.log(b);
 }
 
-let a = '2';
-let b = '3';
-
-alert(Number(a) + Number(b));
-
-let monthNumber = prompt('Введите месяц');
-
-if (monthNumber === '1') {
-  console.log('Зима');
-} else if (monthNumber === '2') {
-  console.log('Зима');
-} else if (monthNumber === '3') {
-  console.log('Весна');
-} else if (monthNumber === '4') {
-  console.log('Весна');
-} else if (monthNumber === '5') {
-  console.log('Весна');
-} else if (monthNumber === '6') {
-  console.log('Лето');
-} else if (monthNumber === '7') {
-    console.log('Лето');
-} else if (monthNumber === '8') {
-    console.log('Лето');
-  } else if (monthNumber === '9') {
-    console.log('Осень');
-  } else if (monthNumber === '10') {
-    console.log('Осень');
-  } else if (monthNumber === '11') {
-    console.log('Осень');
-  } else if (monthNumber === '12') {
-    console.log('Зима');
-} else {
-  console.log('В году всего 12 месяцев');
+for (let c = 7; c <= 22; c++) {
+  console.log(c);
 }
 
-let foreverNumber = Number(prompt('Введите любое число'));
+let obj = {
+  'Коля': '200',
+  'Вася': '300',
+  'Петя': '400'
+};
 
-if (foreverNumber % 2 === 0) {
-  alert('Число четное');
-} else {
-  alert('Число не четное')
+for (let key in obj) {
+  console.log(`${key} — зарплата ${obj[key]} долларов.`);
 }
 
-let clientOS = prompt("Введите 0, если вы используете iOS, или 1, если вы используете Android:");
-let clientDeviceYear = prompt("Введите год создания вашего устройства:");
+let n = 1000;
+let num = 0;
 
-if (clientDeviceYear >= 2015) {
-    if (clientOS === 0) {
-        console.log("Установите приложение для iOS по ссылке");
-    } else if (clientOS === 1) {
-        console.log("Установите приложение для Android по ссылке");
-    } else {
-        console.log("Неизвестная операционная система");
-    }
-} else {
-    if (clientOS === 0) {
-        console.log("Установите облегченную версию приложения для iOS по ссылке");
-    } else if (clientOS === 1) {
-        console.log("Установите облегченную версию приложения для Android по ссылке");
-    } else {
-        console.log("Неизвестная операционная система");
-    }
+while (n >= 50) {
+    n /= 2;
+    num++;
+}
+
+console.log("Получившееся число:", n);
+console.log("Количество итераций:", num);
+
+const firstFriday = 5;
+
+for (let day = firstFriday; day <= 31; day += 7) {
+    console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
 }
